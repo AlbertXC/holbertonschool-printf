@@ -25,7 +25,7 @@ void print_str(va_list fmt)
 	char *b;
 
 	b = (va_arg(fmt, char *));
-	print_str(b);
+	print_string(b);
 }
 
 /**
@@ -36,10 +36,7 @@ void print_str(va_list fmt)
  */
 void print_integer(va_list fmt)
 {
-	int c;
-
-	c = _putchar(va_arg(fmt, int));
-	print_number(c);
+	print_number(va_arg(fmt, int));
 }
 
 /**
