@@ -2,7 +2,7 @@
 
 int _printf(const char *format, ...)
 {
-	func choice[] = {
+	function choice[] = {
 		{"c", print_char},
 		{"s", print_str},
 		{"i", print_integer},
