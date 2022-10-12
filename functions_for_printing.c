@@ -19,11 +19,6 @@ int _putchar(char c)
  */
 void print_string(char *s)
 {
-	if (*s == 0)
-	{
-		_putchar(10);
-	}
-
 	if (*s != 0)
 	{
 		_putchar(*s);
