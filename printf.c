@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * _printf - print multiples arguments pass through the function
+ * @format: arguments pass
+ *
+ * Return: the ammount of character printed
+ */
 int _printf(const char *format, ...)
 {
 	function choice[] = {
@@ -12,6 +18,7 @@ int _printf(const char *format, ...)
 	va_list fmt;
 	int i = 0;
 	int x = 0;
+
 	va_start(fmt, format);
 
 	while (format && format[i])
@@ -30,9 +37,16 @@ int _printf(const char *format, ...)
 			x = 0;
 			i++;
 		}
+		else if (format[i] == '%' && format[i + 1] == '%')
+		{
+			_putchar('%');
+			i++;
+		}
+		if (!format[i])
+			return (1);
 		_putchar(format[i]);
 		i++;
 	}
 	va_end(fmt);
-	return(i);
+	return (i);
 }
