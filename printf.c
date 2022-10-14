@@ -16,21 +16,22 @@ int _printf(const char *format, ...)
 	};
 
 	va_list fmt;
-	int i = 0;
-	int x = 0;
+	int index0 = 0;
+	int index1 = 0;
+	int count = 0;
 
 	va_start(fmt, format);
 
-	while (format && format[i])
+	while (format && format[index0])
 	{
-		if (format[i] == '%')
+		if (format[index0] == '%' && format[index0 + 1] != '%')
 		{
 			i++;
 			while (x < 4)
 			{
-				if (format[i] == *choice[x].print)
+				if (format[index0] == *choice[index1].print)
 				{
-					choice[x].f(fmt);
+					choice[index1].f(fmt);
 				}
 				x++;
 				}
@@ -39,14 +40,16 @@ int _printf(const char *format, ...)
 		}
 		else if (format[i] == '%' && format[i + 1] == '%')
 		{
+			i++;
 			_putchar('%');
+			count++;
 			i++;
 		}
 		if (!format[i])
 			return (1);
-		_putchar(format[i]);
+		_putchar(array[d]);
 		i++;
 	}
 	va_end(fmt);
-	return (i);
+	return ((i - count));
 }
