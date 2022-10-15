@@ -12,8 +12,9 @@ sending a formatted output to the screen.
 
 Allowed editors: `vim`
 
-All your files will be compiled on `Ubuntu 20.04 LTS` using gcc, 
-using the options `-Wall -Werror -Wextra -pedantic -std=gnu89`
+All your files will be compiled on `Ubuntu 20.04 LTS`
+
+Code will be compiled this way: `$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c`
 
 The prototypes of all your functions should be included in your header file called `main.h`
 
@@ -26,4 +27,3 @@ Alberto Cepeda Rivas - https://github.com/AlbertXC
 # License
 
 MIT License
-
