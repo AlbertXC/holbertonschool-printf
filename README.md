@@ -10,7 +10,7 @@ sending a formatted output to the screen.
 
 # Requirements
 
-Prototype: `int _print(const char *format, ...)`
+Prototype: `int _printf(const char *format, ...)`
 
 Allowed editors: `vim`
 
