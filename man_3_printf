@@ -1,0 +1,31 @@
+.TH _PRINTF 3 "15 October 2022" "1" "_printf Man Page"
+
+.SH NAME
+_printf \- print multiples arguments.
+
+.SH SYPNOSIS
+.B _printf 
+FORMAT [ARGUMENT]
+.B _printf 
+OPTION
+
+.SH DESCRIPTION
+.B _printf
+
+.SH OPTIONS
+
+.SH EXAMPLES
+
+.SH EXIT VALUES
+
+.SH BUGS
+
+.SH AUTHOR
+Written by Abigail Castro Figueroa, Alberto Cepeda Rivas.
+
+.SH COPYRIGHT
+Copyright © 2022 Holberton School License Cohort 18 PT
+<https://github.com/AbigailCastroFigueroa>
+<https://github.com/AlbertoXC>
+This is free software: you are free to change and redistribute
+it.  There is NO WARRANTY, to the extent permitted by law.
