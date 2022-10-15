@@ -1,14 +1,14 @@
-## *`_printf`*
+# *`_printf`*
 
 Is a modified version of one of the main output C programming function `printf()`.
 
-# Description
+## Description
 
 The `_printf`, as part of a Holberton project, seeks to recreate the `printf()` function
 in all aspects. From receiving a number of arguments in a string inside quotations, until
 sending a formatted output to the screen.
 
-# Requirements
+## Requirements
 
 Prototype: `int _printf(const char *format, ...)`
 
@@ -20,12 +20,12 @@ Code will be compiled this way: `$ gcc -Wall -Werror -Wextra -pedantic -std=gnu8
 
 The prototypes of all your functions should be included in your header file called `main.h`
 
-# Authors
+## Authors
 
 Abigail Castro Figueroa - https://github.com/AbigailCastroFigueroa
 
 Alberto Cepeda Rivas - https://github.com/AlbertXC
 
-# License
+## License
 
 MIT License
