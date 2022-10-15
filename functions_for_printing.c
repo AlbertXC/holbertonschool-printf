@@ -8,7 +8,7 @@
  */
 int _putchar(char c)
 {
-	return (write(1, &c, 1));
+	return(write(1,&c,1));
 }
 
 /**
@@ -17,12 +17,17 @@ int _putchar(char c)
  *
  * Return: A string.
  */
-void print_string(char *s)
+int print_string(char *s)
 {
+	int i;
+
 	if (*s != 0)
 	{
 		_putchar(*s);
 		print_string(s + 1);
 	}
+	for (i = 0; s[i] != 0; )
+		i++;
+	return (i);
 }
 
