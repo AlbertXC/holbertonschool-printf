@@ -10,9 +10,17 @@ sending a formatted output to the screen.
 
 # Requirements
 
-#Authors
+Allowed editors: `vim`
+
+All your files will be compiled on `Ubuntu 20.04 LTS` using gcc, 
+using the options `-Wall -Werror -Wextra -pedantic -std=gnu89`
+
+The prototypes of all your functions should be included in your header file called `main.h`
+
+# Authors
 
 Abigail Castro Figueroa - https://github.com/AbigailCastroFigueroa
+
 Alberto Cepeda Rivas - https://github.com/AlbertXC
 
 # License
