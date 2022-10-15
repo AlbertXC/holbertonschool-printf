@@ -1,4 +1,4 @@
-## `*_printf*`
+## `_printf`
 
 Is a modified function version of one of the main output C programming function `printf`.
 
