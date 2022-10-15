@@ -1,3 +1,4 @@
+
 #include "main.h"
 
 /**
@@ -23,7 +24,7 @@ int _printf(const char *format, ...)
 
 	while (format && format[i])
 	{
-		if (format[i] == '%')
+		if (format[i] == '%' && format[i + 1] != '%')
 		{
 			i++;
 			while (x < 4)
@@ -33,12 +34,13 @@ int _printf(const char *format, ...)
 					choice[x].f(fmt);
 				}
 				x++;
-				}
+			}
 			x = 0;
 			i++;
 		}
 		else if (format[i] == '%' && format[i + 1] == '%')
 		{
+			i++;
 			_putchar('%');
 			i++;
 		}
@@ -46,7 +48,7 @@ int _printf(const char *format, ...)
 			return (1);
 		_putchar(format[i]);
 		i++;
-	}
+		}
 	va_end(fmt);
 	return (i);
 }
