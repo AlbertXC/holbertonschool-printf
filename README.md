@@ -1,6 +1,6 @@
 # *`_printf`*
 
-Is a modified version of one of the main output C programming function `printf()`.
+This is a modified version of one of the main output C programming function known as `printf()`.
 
 ## Description
 
