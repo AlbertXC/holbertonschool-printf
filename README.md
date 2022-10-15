@@ -10,6 +10,8 @@ sending a formatted output to the screen.
 
 # Requirements
 
+Prototype: `int _print(const char *format, ...)`
+
 Allowed editors: `vim`
 
 All your files will be compiled on `Ubuntu 20.04 LTS`
