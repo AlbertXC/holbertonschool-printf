@@ -11,8 +11,9 @@ FORMAT [ARGUMENT]...
 OPTION
 .PP
 .SH DESCRIPTION
-.B _printf
+Print ARGUMENT(s) given an input to a stdout formatted string.
 .PP
+
 .SH OPTIONS
 .PP
 .SH EXAMPLES
