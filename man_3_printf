@@ -13,14 +13,15 @@ OPTION
 .SH DESCRIPTION
 Print ARGUMENT(s) given an input to a stdout formatted string.
 .PP
-
 .SH OPTIONS
 .PP
-.SH EXAMPLES
+%c  a single character given as argument
 .PP
-.SH EXIT VALUES
+%s  a string given as an argument
 .PP
-.SH BUGS
+%i  an integer given as an argument
+.PP
+%d  an decimal integer given as an argument
 .PP
 .SH AUTHOR 
 Written by Abigail Castro Figueroa, Alberto Cepeda Rivas.
