@@ -1,10 +1,10 @@
-## `_printf`
+## *`_printf`*
 
-Is a modified function version of one of the main output C programming function `printf()`.
+Is a modified version of one of the main output C programming function `printf()`.
 
 # Description
 
-The `_printf`, as a part of a Holberton project, seeks to recreate the `printf()` function
+The `_printf`, as part of a Holberton project, seeks to recreate the `printf()` function
 in all aspects. From receiving a number of arguments in a string inside quotations, until
 sending a formatted output to the screen.
 
