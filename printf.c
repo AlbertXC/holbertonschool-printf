@@ -19,6 +19,7 @@ int _printf(const char *format, ...)
 	va_list fmt;
 	int i = 0;
 	int x = 0;
+	int count = 0;
 
 	va_start(fmt, format);
 
@@ -31,7 +32,7 @@ int _printf(const char *format, ...)
 			{
 				if (format[i] == *choice[x].print)
 				{
-					choice[x].f(fmt);
+					count += choice[x].f(fmt);
 				}
 				x++;
 			}
@@ -42,13 +43,16 @@ int _printf(const char *format, ...)
 		{
 			i++;
 			_putchar('%');
+			count++;
 			i++;
 		}
 		if (!format[i])
 			return (1);
 		_putchar(format[i]);
 		i++;
+		count++;
 		}
 	va_end(fmt);
-	return (i);
+	return (count);
 }
+

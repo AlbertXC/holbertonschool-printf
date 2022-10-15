@@ -6,12 +6,13 @@
  *
  * Return: Nothing.
  */
-void print_char(va_list fmt)
+int print_char(va_list fmt)
 {
 	int a;
 
 	a = (va_arg(fmt, int));
 	_putchar(a);
+	return (1);
 }
 
 /**
@@ -20,12 +21,15 @@ void print_char(va_list fmt)
  *
  * Return: Nothing.
  */
-void print_str(va_list fmt)
+int print_str(va_list fmt)
 {
+	int i;
 	char *b;
-
+	
 	b = (va_arg(fmt, char *));
-	print_string(b);
+	for (i = 0; b[i] != 0; i++)
+		_putchar(b[i]);
+	return (i);
 }
 
 /**
@@ -34,9 +38,11 @@ void print_str(va_list fmt)
  *
  * Return: Nothing.
  */
-void print_integer(va_list fmt)
+int print_integer(va_list fmt)
 {
-	print_number(va_arg(fmt, int));
+	int digit;
+	digit = print_number(va_arg(fmt, int));
+		return (digit);
 }
 
 /**
@@ -45,7 +51,7 @@ void print_integer(va_list fmt)
  *
  * Return: Nothing
  */
-void print_number(int n)
+int print_number(int n)
 {
 	unsigned int num;
 
@@ -60,5 +66,8 @@ void print_number(int n)
 	if ((num / 10) != 0)
 		print_number(num / 10);
 	_putchar((num % 10) + 48);
+	return (num);
 }
+
+
 

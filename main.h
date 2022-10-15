@@ -3,7 +3,8 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdarg.h>
-void print_string(char *s);
+#include <string.h>
+int print_string(char *s);
 int _putchar(char c);
 int _printf(const char *format, ...);
 
@@ -15,7 +16,7 @@ int _printf(const char *format, ...);
 struct func_fmt
 {
 char *print;
-void (*f)(va_list n);
+int (*f)(va_list n);
 };
 
 /**
@@ -23,9 +24,9 @@ void (*f)(va_list n);
  */
 typedef struct func_fmt function;
 
-void print_char(va_list n);
-void print_str(va_list n);
-void print_integer(va_list n);
-void print_number(int n);
+int print_char(va_list n);
+int print_str(va_list n);
+int print_integer(va_list n);
+int print_number(int n);
 #endif
 
