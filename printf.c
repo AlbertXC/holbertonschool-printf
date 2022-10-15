@@ -1,3 +1,4 @@
+
 #include "main.h"
 
 /**
@@ -16,25 +17,24 @@ int _printf(const char *format, ...)
 	};
 
 	va_list fmt;
-	int index0 = 0;
-	int index1 = 0;
-	int count = 0;
+	int i = 0;
+	int x = 0;
 
 	va_start(fmt, format);
 
-	while (format && format[index0])
+	while (format && format[i])
 	{
-		if (format[index0] == '%' && format[index0 + 1] != '%')
+		if (format[i] == '%' && format[i + 1] != '%')
 		{
 			i++;
 			while (x < 4)
 			{
-				if (format[index0] == *choice[index1].print)
+				if (format[i] == *choice[x].print)
 				{
-					choice[index1].f(fmt);
+					choice[x].f(fmt);
 				}
 				x++;
-				}
+			}
 			x = 0;
 			i++;
 		}
@@ -42,14 +42,13 @@ int _printf(const char *format, ...)
 		{
 			i++;
 			_putchar('%');
-			count++;
 			i++;
 		}
 		if (!format[i])
 			return (1);
-		_putchar(array[d]);
+		_putchar(format[i]);
 		i++;
-	}
+		}
 	va_end(fmt);
-	return ((i - count));
+	return (i);
 }
